@@ -2,8 +2,8 @@ URxvt.scrollBar: false
 URxvt*cursorBlink: true
 URxvt*transparent: true
 URxvt*shading: 20
-URxvt.font: xft:Monaco:size=10,xft:WenQuanYi Micro Hei:size=10
-URxvt.boldfont: xft:Monaco:bold:size=10,xft:WenQuanYi Micro Hei:bold:size=10
+URxvt.font: xft:Monaco:size=10,xft:DejaVu Sans Mono for Powerline:size=10,xft:WenQuanYi Micro Hei:size=10
+URxvt.boldfont: xft:Monaco:size=10,xft:DejaVu Sans Mono for Powerline:bold:size=10,xft:WenQuanYi Micro Hei:bold:size=10
 URxvt.inputMethod: ibus
 
 #define S_yellow        #b58900
@@ -54,3 +54,4 @@ URxvt.inputMethod: ibus
 
 rofi.color-window: #002b37, #002b37, #003642
 rofi.color-normal: #002b37, #819396, #003643, #008ed4, #ffffff
+rofi.color-active: #002b37, #008ed4, #003643, #008ed4, #66c6ff
