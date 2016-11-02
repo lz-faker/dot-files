@@ -1,0 +1,5 @@
+feh --bg-scale /usr/share/pixmaps/background.jpg
+xrandr --output DP1 --auto --left-of VGA1
+ibus-daemon -d -x
+sh /home/diartyz/Coding/dot-files/scripts/natural-scroll.sh
+xset r rate 200 30
