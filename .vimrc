@@ -99,6 +99,7 @@ endwhile
 
 " Theme
 set cul
+set number
 set relativenumber
 set t_Co=256
 set background=dark
