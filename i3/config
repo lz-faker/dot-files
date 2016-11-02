@@ -82,6 +82,3 @@ bar {
         separator #ffffff
     }
 }
-
-exec --no-startup-id i3-msg 'workspace 1; exec chromium'
-exec --no-startup-id i3-msg 'workspace 2; exec urxvt'
