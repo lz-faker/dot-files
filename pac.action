@@ -1,0 +1,52 @@
+# /etc/privoxy/pac.action
+
+{{alias}}
+direct = +forward-override{forward .}
+ssh    = +forward-override{forward-socks5 127.0.0.1:1080 .}
+https  = +redirect{s@http://@https://@}
+
+{direct}
+
+{ssh}
+
+# for google sites
+.google.com.hk
+.google.com
+.gstatic.com
+.googleapis.com
+.googleusercontent.com
+
+# for youtube
+.youtube.com
+.ytimg.com
+.googlevideo.com
+.googlesyndication.com
+.ggpht.com
+
+# github
+gist.github.com
+.githubusercontent.com
+
+# bitbucket
+cloudfront.net
+
+# for slack
+.fastly.net
+
+# for gravatar
+.gravatar.com
+
+# for icloud
+.amazonaws.com
+
+# for amazon
+.amazon.co.jp
+.images-amazon.com
+
+# the rest
+.cmule*.com
+.dropbox.com
+.feedly.com
+
+{https}
+.bit.ly
