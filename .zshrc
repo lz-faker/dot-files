@@ -4,5 +4,6 @@ ZSH_THEME="random"
 plugins=(git autojump tmux zsh-syntax-highlighting history-substring-search colored-man-pages)
 source $ZSH/oh-my-zsh.sh
 
+alias vi="vim"
 alias pc="proxychains4"
 if [ "$TMUX" = "" ]; then tmux; fi
