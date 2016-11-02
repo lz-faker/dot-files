@@ -1,0 +1,8 @@
+keycode 94 = grave asciitilde grave asciitilde
+
+clear lock
+clear control
+keycode 66 = Control_L NoSymbol Control_L
+keycode 37 = Caps_Lock NoSymbol Caps_Lock
+add lock = Caps_Lock
+add control = Control_L
