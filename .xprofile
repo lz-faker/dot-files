@@ -3,7 +3,10 @@ xrandr --output DP1 --auto --left-of VGA1
 ibus-daemon -d -x
 xset r rate 200 30
 synclient TapButton1=1
+synclient TapButton2=3
+synclient PalmDetect=on
 synclient VertScrollDelta=-111
+synclient HorizScrollDelta=-111
 synclient HorizTwoFingerScroll=1
 xinput set-prop "Razer Razer Abyssus" "libinput Natural Scrolling Enabled" 1
 xinput set-prop "PixArt USB Optical Mouse" "libinput Natural Scrolling Enabled" 1
