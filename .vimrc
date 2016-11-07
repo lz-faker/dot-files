@@ -43,6 +43,7 @@ Plug 'neomake/neomake'
 " Syntax
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'jimmyhchan/dustjs.vim'
+Plug 'posva/vim-vue'
 
 " Tools
 Plug 'rking/ag.vim'
