@@ -145,9 +145,9 @@ let g:ctrlp_show_hidden = 1
 
 " Emmet
 let g:user_emmet_leader_key = "<c-z>"
-autocmd FileType html,dustjs,html.handlebars imap <expr><c-y> emmet#expandAbbrIntelligent("\<tab>")
-autocmd FileType html,dustjs,html.handlebars imap <expr><c-j> "<c-z>n"
-autocmd FileType html,dustjs,html.handlebars imap <expr><c-k> "<c-z>N"
+imap <expr><c-y> emmet#expandAbbrIntelligent("\<tab>")
+imap <expr><c-j> "<c-z>n"
+imap <expr><c-k> "<c-z>N"
 
 " Utilsnip
 let g:UltiSnipsExpandTrigger = "<c-l>"
