@@ -6,6 +6,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'ap/vim-css-color'
 
 " Coding
 Plug 'scrooloose/nerdcommenter'
@@ -123,7 +124,6 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 " Indent Guides
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
-let g:indent_guides_auto_colors = 0
 
 " Nerd Commenter
 let g:NERDSpaceDelims = 1
