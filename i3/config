@@ -70,7 +70,7 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 
-focus_follows_mouse no
+focus_follows_mouse yes
 font pango:Inconsolata 9
 hide_edge_borders both
 
