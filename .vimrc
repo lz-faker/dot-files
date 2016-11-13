@@ -110,6 +110,10 @@ let g:gruvbox_sign_column = "bg0"
 let g:gruvbox_contrast_dark = "hard"
 let g:gruvbox_invert_selection = 0
 colorscheme gruvbox
+hi CursorLine ctermbg=235
+hi ColorColumn ctermbg=235
+hi IndentGuidesOdd ctermbg=235
+hi IndentGuidesEven ctermbg=235
 hi MatchParen ctermbg=NONE cterm=underline
 
 " Airline
