@@ -1,7 +1,5 @@
 URxvt.scrollBar: false
 URxvt*cursorBlink: true
-URxvt*transparent: true
-URxvt*shading: 20
 URxvt.font: xft:Monaco:size=10,xft:DejaVu Sans Mono for Powerline:size=10,xft:WenQuanYi Micro Hei:size=10
 URxvt.boldfont: xft:Monaco:size=10,xft:DejaVu Sans Mono for Powerline:bold:size=10,xft:WenQuanYi Micro Hei:bold:size=10
 URxvt.inputMethod: ibus
@@ -15,8 +13,7 @@ URxvt.inputMethod: ibus
 #define S_cyan          #2aa198
 #define S_green         #859900
 
-! #define S_base03        #002b36
-#define S_base03        #1c1c1c
+#define S_base03        #002b36
 #define S_base02        #073642
 #define S_base01        #586e75
 #define S_base00        #657b83
@@ -25,7 +22,8 @@ URxvt.inputMethod: ibus
 #define S_base2         #eee8d5
 #define S_base3         #fdf6e3
 
-*background:              S_base03
+! *background:              S_base03
+*background:              #1d1f21
 *foreground:              S_base0
 *fading:                  40
 *fadeColor:               S_base03
@@ -43,10 +41,11 @@ URxvt.inputMethod: ibus
 *color7:                  S_base2
 *color9:                  S_orange
 ! *color8:                  S_base03
-*color8:                  S_base01
-*color10:                 S_base01
+*color8:                  #666666
+! *color10:                 S_base01
+*color10:                 #9ec400
 ! *color11:                 S_base00
-*color11:                 S_base2
+*color11:                 #f0c674
 *color12:                 S_base0
 *color13:                 S_violet
 *color14:                 S_base1

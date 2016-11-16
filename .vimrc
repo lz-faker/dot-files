@@ -35,7 +35,6 @@ Plug 'Shougo/neocomplcache.vim'
 Plug 'JazzCore/neocomplcache-ultisnips'
 
 " Code Style
-Plug 'tpope/vim-sleuth'
 Plug 'Chiel92/vim-autoformat'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'scrooloose/syntastic'
