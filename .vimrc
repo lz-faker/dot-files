@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 " Theme
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'ap/vim-css-color'
@@ -32,6 +33,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'Shougo/neocomplete.vim'
+Plug 'Shougo/deoplete.nvim'
 
 " Code Style
 Plug 'Chiel92/vim-autoformat'
@@ -113,6 +115,7 @@ hi MatchParen ctermbg=NONE cterm=underline
 
 " Airline
 set laststatus=2
+let g:airline_theme = "wombat"
 let g:airline_powerline_fonts = 1
 let g:airline_section_z = "%p%%  %l/%L : %v"
 let g:airline#extensions#tabline#enabled = 1
@@ -150,6 +153,14 @@ imap <expr><c-k> "<c-z>N"
 " Utilsnip
 let g:UltiSnipsExpandTrigger = "<c-l>"
 
-" Neocomplete
-let g:neocomplete#enable_at_startup = 1
+" Neocomplete & Deoplete.
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+if has('nvim')
+    let g:deoplete#enable_at_startup = 1
+else
+    let g:neocomplete#enable_at_startup = 1
+endif
+
+
+" White Space
+nnoremap <space>c :StripWhitespace<cr>:w<cr>
