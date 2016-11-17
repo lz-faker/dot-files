@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
 " Theme
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'ap/vim-css-color'
@@ -18,6 +17,7 @@ Plug 'easymotion/vim-easymotion'
 
 " File Explore
 Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'moll/vim-bbye'
@@ -31,14 +31,11 @@ Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'Shougo/neocomplcache.vim'
-Plug 'JazzCore/neocomplcache-ultisnips'
+Plug 'Shougo/neocomplete.vim'
 
 " Code Style
 Plug 'Chiel92/vim-autoformat'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'scrooloose/syntastic'
-Plug 'neomake/neomake'
 
 " Syntax
 Plug 'mustache/vim-mustache-handlebars'
@@ -70,7 +67,6 @@ set wildignore+=*/node_modules/*,*/dist/*
 let mapleader = ","
 nnoremap <leader>q :q<cr>
 nnoremap <leader>w :w<cr>
-nnoremap <leader>a GVgg
 nnoremap cf :let @+=expand("%:p")<cr>
 nnoremap cp :%y<cr>
 nnoremap vv vip
@@ -103,7 +99,6 @@ endwhile
 set cul
 set number
 set relativenumber
-set t_Co=256
 set background=dark
 set colorcolumn=80,120
 let g:gruvbox_sign_column = "bg0"
@@ -118,9 +113,8 @@ hi MatchParen ctermbg=NONE cterm=underline
 
 " Airline
 set laststatus=2
-let g:airline_theme = "wombat"
 let g:airline_powerline_fonts = 1
-let g:airline_section_z = "%p%%  %l/%L:%v"
+let g:airline_section_z = "%p%%  %l/%L : %v"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ":t"
 let g:airline#extensions#tabline#buffer_nr_show = 1
@@ -156,34 +150,6 @@ imap <expr><c-k> "<c-z>N"
 " Utilsnip
 let g:UltiSnipsExpandTrigger = "<c-l>"
 
-" Neocomplcache
-let g:neocomplcache_enable_at_startup = 1
+" Neocomplete
+let g:neocomplete#enable_at_startup = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-
-" White Space
-nnoremap <space>c :StripWhitespace<cr>:w<cr>
-
-" Syntastic/Neomake
-if has('nvim')
-    let g:neomake_javascript_enabled_makers = ['eslint']
-    let g:neomake_scss_enabled_makers = ['stylelint']
-    let g:neomake_html_enabled_makers = ['htmlhint']
-    let g:neomake_scss_stylelint_maker = {
-                \ 'exe': 'stylelint',
-                \ 'errorformat':
-                \ '%+P%f,' .
-                \ '%*\s%l:%c  %t  %m,' .
-                \ '%-Q'
-                \ }
-    nmap <space>o :lopen<CR>
-    nmap <space>x :lclose<CR>
-    nmap <space>l :ll<CR>
-    autocmd! BufEnter,BufWritePost * Neomake
-else
-    let g:syntastic_auto_loc_list = 1
-    let g:syntastic_html_checkers = ['htmlhint']
-    let g:syntastic_scss_checkers = ['stylelint']
-    let g:syntastic_javascript_checkers = ['eslint']
-    let g:syntastic_mode_map = { "mode": "passive" }
-    nnoremap <space>s :w<cr>:SyntasticCheck<cr>
-endif
