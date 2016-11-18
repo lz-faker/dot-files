@@ -44,6 +44,7 @@ Plug 'mustache/vim-mustache-handlebars'
 Plug 'jimmyhchan/dustjs.vim'
 Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
+Plug 'hail2u/vim-css3-syntax'
 
 " Tools
 Plug 'rking/ag.vim'
