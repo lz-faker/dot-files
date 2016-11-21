@@ -70,6 +70,7 @@ set wildignore+=*/node_modules/*,*/dist/*
 let mapleader = ","
 nnoremap <leader>q :q<cr>
 nnoremap <leader>w :w<cr>
+nnoremap <leader>a GVgg
 nnoremap cf :let @+=expand("%:p")<cr>
 nnoremap cp :%y<cr>
 nnoremap vv vip
