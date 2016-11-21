@@ -32,8 +32,8 @@ Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'Shougo/neocomplete.vim'
-Plug 'Shougo/deoplete.nvim'
+Plug 'Shougo/neocomplcache.vim'
+Plug 'JazzCore/neocomplcache-ultisnips'
 
 " Code Style
 Plug 'Chiel92/vim-autoformat'
@@ -154,13 +154,9 @@ imap <expr><c-k> "<c-z>N"
 " Utilsnip
 let g:UltiSnipsExpandTrigger = "<c-l>"
 
-" Neocomplete & Deoplete.
+" Neocomplcache
+let g:neocomplcache_enable_at_startup = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-if has('nvim')
-    let g:deoplete#enable_at_startup = 1
-else
-    let g:neocomplete#enable_at_startup = 1
-endif
 
 
 " White Space
