@@ -49,6 +49,7 @@ Plug 'hail2u/vim-css3-syntax'
 " Tools
 Plug 'rking/ag.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'kshenoy/vim-signature'
 
 call plug#end()
 
