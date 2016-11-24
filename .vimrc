@@ -69,6 +69,8 @@ set pastetoggle=<F12>
 set clipboard=unnamed,unnamedplus
 set wildignore+=*/node_modules/*,*/dist/*
 let mapleader = ","
+nnoremap n nzzzv
+nnoremap N Nzzzv
 nnoremap <leader>q :q<cr>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>a GVgg
