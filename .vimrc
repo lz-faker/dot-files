@@ -6,7 +6,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'ap/vim-css-color'
 
 " Coding
 Plug 'scrooloose/nerdcommenter'
@@ -49,7 +48,6 @@ Plug 'hail2u/vim-css3-syntax'
 " Tools
 Plug 'rking/ag.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'kshenoy/vim-signature'
 
 call plug#end()
 
@@ -69,13 +67,13 @@ set pastetoggle=<F12>
 set clipboard=unnamed,unnamedplus
 set wildignore+=*/node_modules/*,*/dist/*
 let mapleader = ","
-nnoremap n nzzzv
-nnoremap N Nzzzv
 nnoremap <leader>q :q<cr>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>a GVgg
-nnoremap cf :let @+=expand("%:p")<cr>
+nnoremap n nzzzv
+nnoremap N Nzzzv
 nnoremap cp :%y<cr>
+nnoremap cf :let @+=expand("%:p")<cr>
 nnoremap vv vip
 vnoremap d "_d
 command Q :q!
@@ -161,7 +159,6 @@ let g:UltiSnipsExpandTrigger = "<c-l>"
 " Neocomplcache
 let g:neocomplcache_enable_at_startup = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-
 
 " White Space
 nnoremap <space>c :StripWhitespace<cr>:w<cr>
