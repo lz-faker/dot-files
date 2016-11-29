@@ -37,6 +37,7 @@ Plug 'JazzCore/neocomplcache-ultisnips'
 " Code Style
 Plug 'Chiel92/vim-autoformat'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'tpope/vim-sleuth'
 
 " Syntax
 Plug 'mustache/vim-mustache-handlebars'
