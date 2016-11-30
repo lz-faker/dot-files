@@ -45,6 +45,7 @@ Plug 'jimmyhchan/dustjs.vim'
 Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
 Plug 'hail2u/vim-css3-syntax'
+Plug 'mxw/vim-jsx'
 
 " Tools
 Plug 'rking/ag.vim'
@@ -163,3 +164,6 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " White Space
 nnoremap <space>c :StripWhitespace<cr>:w<cr>
+
+" jsx
+let g:jsx_ext_required = 0
