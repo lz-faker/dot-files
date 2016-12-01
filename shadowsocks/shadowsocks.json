@@ -1,0 +1,6 @@
+{
+  "server": "0.0.0.0",
+  "server_port": 8888,
+  "password": "12781278",
+  "method": "rc4-md5"
+}
