@@ -38,6 +38,8 @@ Plug 'JazzCore/neocomplcache-ultisnips'
 Plug 'Chiel92/vim-autoformat'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-sleuth'
+Plug 'w0rp/ale'
+Plug 'neomake/neomake'
 
 " Syntax
 Plug 'mustache/vim-mustache-handlebars'
@@ -46,7 +48,6 @@ Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'mxw/vim-jsx'
-Plug 'w0rp/ale'
 
 " Tools
 Plug 'rking/ag.vim'
@@ -85,8 +86,8 @@ command W w !sudo tee % > /dev/null
 " Tab & Space
 set smarttab
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 
 " Search
 set hlsearch
@@ -168,3 +169,6 @@ nnoremap <space>c :StripWhitespace<cr>:w<cr>
 
 " jsx
 let g:jsx_ext_required = 0
+
+" Neomake
+autocmd! BufEnter,BufWritePost * Neomake
