@@ -48,6 +48,7 @@ Plug 'posva/vim-vue'
 Plug 'pangloss/vim-javascript'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'mxw/vim-jsx'
+Plug 'othree/html5.vim'
 
 " Tools
 Plug 'rking/ag.vim'
