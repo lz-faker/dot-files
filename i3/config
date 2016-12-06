@@ -90,3 +90,4 @@ bindsym XF86KbdBrightnessDown exec kbdlight down 10
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -3%
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +3%
+bindsym --release button2 kill
