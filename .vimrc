@@ -39,7 +39,6 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-sleuth'
 Plug 'w0rp/ale'
-Plug 'neomake/neomake'
 
 " Syntax
 Plug 'mustache/vim-mustache-handlebars'
@@ -167,6 +166,3 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " White Space
 nnoremap <space>c :StripWhitespace<cr>:w<cr>
-
-" Neomake
-autocmd! BufEnter,BufWritePost * Neomake
