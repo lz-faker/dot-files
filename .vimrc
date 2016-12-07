@@ -166,3 +166,7 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " White Space
 nnoremap <space>c :StripWhitespace<cr>:w<cr>
+
+" Ale
+nmap <silent><c-k> <Plug>(ale_previous_wrap)
+nmap <silent><c-j> <Plug>(ale_next_wrap)
