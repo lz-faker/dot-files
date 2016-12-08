@@ -33,6 +33,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'Shougo/neocomplcache.vim'
 Plug 'JazzCore/neocomplcache-ultisnips'
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 
 " Code Style
 Plug 'Chiel92/vim-autoformat'
@@ -163,6 +164,9 @@ let g:UltiSnipsExpandTrigger = "<c-l>"
 " Neocomplcache
 let g:neocomplcache_enable_at_startup = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+
+" Tern
+set completeopt-=preview
 
 " White Space
 nnoremap <space>c :StripWhitespace<cr>:w<cr>
